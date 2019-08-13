@@ -1,6 +1,8 @@
 # list-ios
 This is a simple list mobile app (to-do list, tasks, shopping list, recipes, and the like) showcasing the implementation of CRUD operations, written in Swift for the iOS platform.
 
+Together with [list-android](https://github.com/cyliong/list-android), they present a way to develop cross-platform native mobile apps with similar patterns and libraries.
+
 ## Features
 - Display a list of items (`UITableViewController`, Realm `Results`)
 - Input dialog for adding and editing items (`UIAlertController`)
