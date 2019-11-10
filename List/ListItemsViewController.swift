@@ -5,6 +5,35 @@ class ListItemsViewController: UITableViewController {
     
     let realm = try! Realm()
     lazy var listItems: Results<ListItem> = { realm.objects(ListItem.self) }()
+    var notificationToken: NotificationToken?
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        notificationToken = listItems.observe { [weak self] (changes: RealmCollectionChange) in
+            guard let tableView = self?.tableView else { return }
+            
+            switch changes {
+            case .initial:
+                tableView.reloadData()
+            case .update(_, let deletions, let insertions, let modifications):
+                tableView.beginUpdates()
+                tableView.deleteRows(at: deletions.map({ IndexPath(row: $0, section: 0) }),
+                                     with: .automatic)
+                tableView.insertRows(at: insertions.map({ IndexPath(row: $0, section: 0) }),
+                                     with: .automatic)
+                tableView.reloadRows(at: modifications.map({ IndexPath(row: $0, section: 0) }),
+                                     with: .automatic)
+                tableView.endUpdates()
+            case .error(let error):
+                fatalError("\(error)")
+            }
+        }
+    }
+    
+    deinit {
+        notificationToken?.invalidate()
+    }
 
     override func numberOfSections(in tableView: UITableView) -> Int {
         return 1
@@ -35,7 +64,6 @@ class ListItemsViewController: UITableViewController {
         if editingStyle == .delete {
             try! realm.write {
                 realm.delete(listItems[indexPath.row])
-                tableView.reloadData()
             }
         }
     }
@@ -70,12 +98,8 @@ class ListItemsViewController: UITableViewController {
                 if isNew {
                     let listItem = ListItem(title: itemTitle)
                     self.realm.add(listItem)
-                    let indexPath = IndexPath(row: self.listItems.count - 1, section: 0)
-                    self.tableView.insertRows(at: [indexPath], with: .automatic)
                 } else {
                     self.listItems[position].title = itemTitle
-                    let indexPath = IndexPath(row: position, section: 0)
-                    self.tableView.reloadRows(at: [indexPath], with: .automatic)
                 }
             }
         })
