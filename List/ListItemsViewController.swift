@@ -3,14 +3,13 @@ import RealmSwift
 
 class ListItemsViewController: UITableViewController {
     
-    let realm = try! Realm()
-    lazy var listItems: Results<ListItem> = { realm.objects(ListItem.self) }()
-    var notificationToken: NotificationToken?
+    private let viewModel = ListItemsViewModel()
+    private var notificationToken: NotificationToken?
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        notificationToken = listItems.observe { [weak self] (changes: RealmCollectionChange) in
+        notificationToken = viewModel.listItems.observe { [weak self] (changes: RealmCollectionChange) in
             guard let tableView = self?.tableView else { return }
             
             switch changes {
@@ -35,18 +34,14 @@ class ListItemsViewController: UITableViewController {
         notificationToken?.invalidate()
     }
 
-    override func numberOfSections(in tableView: UITableView) -> Int {
-        return 1
-    }
-
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return listItems.count
+        return viewModel.listItems.count
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "ListItemCell", for: indexPath)
 
-        let item = listItems[indexPath.row]
+        let item = viewModel.listItems[indexPath.row]
         cell.textLabel?.text = item.title
 
         return cell
@@ -62,9 +57,7 @@ class ListItemsViewController: UITableViewController {
         forRowAt indexPath: IndexPath
     ) {
         if editingStyle == .delete {
-            try! realm.write {
-                realm.delete(listItems[indexPath.row])
-            }
+            viewModel.deleteItem(index: indexPath.row)
         }
     }
     
@@ -84,7 +77,7 @@ class ListItemsViewController: UITableViewController {
             if isNew {
                 textField.placeholder = "Enter a new item"
             } else {
-                textField.text = self.listItems[position].title
+                textField.text = self.viewModel.listItems[position].title
             }
         }
         alert.addAction(UIAlertAction(title: "Cancel", style: .cancel))
@@ -94,13 +87,10 @@ class ListItemsViewController: UITableViewController {
                 return
             }
             
-            try! self.realm.write {
-                if isNew {
-                    let listItem = ListItem(title: itemTitle)
-                    self.realm.add(listItem)
-                } else {
-                    self.listItems[position].title = itemTitle
-                }
+            if isNew {
+                self.viewModel.addItem(title: itemTitle)
+            } else {
+                self.viewModel.updateItem(index: position, title: itemTitle)
             }
         })
         
