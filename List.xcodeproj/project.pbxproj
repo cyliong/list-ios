@@ -12,6 +12,8 @@
 		AF25D6F522CB74E800F9D68D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF25D6F322CB74E800F9D68D /* Main.storyboard */; };
 		AF25D6F722CB74E800F9D68D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AF25D6F622CB74E800F9D68D /* Assets.xcassets */; };
 		AF25D6FA22CB74E800F9D68D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF25D6F822CB74E800F9D68D /* LaunchScreen.storyboard */; };
+		AF333A4623900722009FDCEC /* ItemViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF333A4523900722009FDCEC /* ItemViewModel.swift */; };
+		AF333A482390084C009FDCEC /* ItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF333A472390084C009FDCEC /* ItemViewController.swift */; };
 		AF7A8DFA237AA19C008596D2 /* ListItemsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF7A8DF9237AA19C008596D2 /* ListItemsViewModel.swift */; };
 		AFBA037122CCB135003737C7 /* ListItemsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFBA037022CCB135003737C7 /* ListItemsViewController.swift */; };
 		AFBA037422CCB896003737C7 /* ListItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFBA037322CCB896003737C7 /* ListItem.swift */; };
@@ -27,6 +29,8 @@
 		AF25D6F622CB74E800F9D68D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AF25D6F922CB74E800F9D68D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AF25D6FB22CB74E800F9D68D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AF333A4523900722009FDCEC /* ItemViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemViewModel.swift; sourceTree = "<group>"; };
+		AF333A472390084C009FDCEC /* ItemViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemViewController.swift; sourceTree = "<group>"; };
 		AF7A8DF9237AA19C008596D2 /* ListItemsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListItemsViewModel.swift; sourceTree = "<group>"; };
 		AFBA037022CCB135003737C7 /* ListItemsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListItemsViewController.swift; sourceTree = "<group>"; };
 		AFBA037322CCB896003737C7 /* ListItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListItem.swift; sourceTree = "<group>"; };
@@ -85,6 +89,7 @@
 				AFBA037222CCB7E9003737C7 /* Model */,
 				AF7A8DF8237AA147008596D2 /* ViewModel */,
 				AFBA037022CCB135003737C7 /* ListItemsViewController.swift */,
+				AF333A472390084C009FDCEC /* ItemViewController.swift */,
 				AF25D6EF22CB74E800F9D68D /* AppDelegate.swift */,
 				AF25D6F322CB74E800F9D68D /* Main.storyboard */,
 				AF25D6F822CB74E800F9D68D /* LaunchScreen.storyboard */,
@@ -98,6 +103,7 @@
 			isa = PBXGroup;
 			children = (
 				AF7A8DF9237AA19C008596D2 /* ListItemsViewModel.swift */,
+				AF333A4523900722009FDCEC /* ItemViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -227,7 +233,9 @@
 				AFBA037422CCB896003737C7 /* ListItem.swift in Sources */,
 				AF7A8DFA237AA19C008596D2 /* ListItemsViewModel.swift in Sources */,
 				AFBA037122CCB135003737C7 /* ListItemsViewController.swift in Sources */,
+				AF333A4623900722009FDCEC /* ItemViewModel.swift in Sources */,
 				AF25D6F022CB74E800F9D68D /* AppDelegate.swift in Sources */,
+				AF333A482390084C009FDCEC /* ItemViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

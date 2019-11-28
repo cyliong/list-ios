@@ -46,10 +46,6 @@ class ListItemsViewController: UITableViewController {
 
         return cell
     }
-    
-    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        showInputDialog(position: indexPath.row)
-    }
 
     override func tableView(
         _ tableView: UITableView,
@@ -57,44 +53,20 @@ class ListItemsViewController: UITableViewController {
         forRowAt indexPath: IndexPath
     ) {
         if editingStyle == .delete {
-            viewModel.deleteItem(index: indexPath.row)
+            viewModel.onDelete(index: indexPath.row)
         }
     }
     
-    @IBAction func addItem(_ sender: UIBarButtonItem) {
-        showInputDialog()
-    }
+    // MARK: - Navigation
     
-    private func showInputDialog(position: Int = -1) {
-        let isNew = position == -1
-        
-        let alert = UIAlertController(
-            title: isNew ? "New Item" : "Edit Item",
-            message: nil,
-            preferredStyle: .alert)
-        
-        alert.addTextField { textField in
-            if isNew {
-                textField.placeholder = "Enter a new item"
-            } else {
-                textField.text = self.viewModel.listItems[position].title
-            }
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "EditItem",
+            let navigationController = segue.destination as? UINavigationController,
+            let itemViewController = navigationController.viewControllers.first as? ItemViewController,
+            let indexPath = tableView.indexPathForSelectedRow
+        {
+            itemViewController.viewModel = viewModel.itemViewModel(index: indexPath.row)
         }
-        alert.addAction(UIAlertAction(title: "Cancel", style: .cancel))
-        alert.addAction(UIAlertAction(title: "Save", style: .default) { _ in
-            guard let itemTitle = alert.textFields?.first?.text, !itemTitle.isEmpty else {
-                self.showInputDialog(position: position)
-                return
-            }
-            
-            if isNew {
-                self.viewModel.addItem(title: itemTitle)
-            } else {
-                self.viewModel.updateItem(index: position, title: itemTitle)
-            }
-        })
-        
-        present(alert, animated: true)
     }
     
 }
