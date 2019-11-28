@@ -101,13 +101,14 @@
                                 <action selector="cancel:" destination="YG1-7J-ONY" id="d1l-CM-0qb"/>
                             </connections>
                         </barButtonItem>
-                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="ID8-QO-y1I">
+                        <barButtonItem key="rightBarButtonItem" enabled="NO" systemItem="save" id="ID8-QO-y1I">
                             <connections>
                                 <action selector="save:" destination="YG1-7J-ONY" id="leP-OY-Opl"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="saveButton" destination="ID8-QO-y1I" id="93C-3I-tsS"/>
                         <outlet property="titleTextField" destination="Elq-16-w8N" id="bQU-ov-Npq"/>
                     </connections>
                 </tableViewController>

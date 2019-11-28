@@ -1,10 +1,15 @@
 import UIKit
+import RxSwift
+import RxCocoa
 
 class ItemViewController: UITableViewController {
     
     var viewModel: ItemViewModel?
 
     @IBOutlet private var titleTextField: UITextField!
+    @IBOutlet private var saveButton: UIBarButtonItem!
+    
+    private let disposeBag = DisposeBag()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -17,22 +22,24 @@ class ItemViewController: UITableViewController {
         }
         
         titleTextField.becomeFirstResponder()
+        
+        titleTextField
+            .rx
+            .text
+            .observeOn(MainScheduler.asyncInstance)
+            .throttle(.milliseconds(100), scheduler: MainScheduler.instance)
+            .map {
+                !($0?.replacingOccurrences(of: " ", with: "").isEmpty ?? true)
+            }
+            .bind(to: saveButton.rx.isEnabled)
+            .disposed(by: disposeBag)
     }
     
     // MARK: - Actions
     
     @IBAction func save(_ sender: UIBarButtonItem) {
-        if let title = titleTextField.text, !title.isEmpty {
-            viewModel?.onSave(title: title)
-            dismiss(animated: true)
-        } else {
-            let alert = UIAlertController(
-                title: "Please enter an item.",
-                message: nil,
-                preferredStyle: .alert)
-            alert.addAction(UIAlertAction(title: "OK", style: .default))
-            present(alert, animated: true)
-        }
+        viewModel?.onSave(title: titleTextField.text!)
+        dismiss(animated: true)
     }
     
     @IBAction func cancel(_ sender: UIBarButtonItem) {
