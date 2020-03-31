@@ -1,4 +1,5 @@
 import UIKit
+import MaterialComponents.MaterialSnackbar
 import RealmSwift
 
 class ListItemsViewController: UITableViewController {
@@ -24,6 +25,12 @@ class ListItemsViewController: UITableViewController {
                 tableView.reloadRows(at: modifications.map({ IndexPath(row: $0, section: 0) }),
                                      with: .automatic)
                 tableView.endUpdates()
+                
+                if !deletions.isEmpty {
+                    let message = MDCSnackbarMessage()
+                    message.text = "Item deleted."
+                    MDCSnackbarManager.show(message)
+                }
             case .error(let error):
                 fatalError("\(error)")
             }

@@ -6,4 +6,5 @@ target 'List' do
   pod 'RealmSwift'
   pod 'RxSwift', '~> 5'
   pod 'RxCocoa', '~> 5'
+  pod 'MaterialComponents/Snackbar'
 end

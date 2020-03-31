@@ -1,7 +1,20 @@
 # list-ios
-This is a simple list mobile app (to-do list, tasks, shopping list, recipes, and the like) showcasing the implementation of CRUD operations, MVVM pattern and reactive programming, written in Swift for the iOS platform.
+This is a simple list mobile app (to-do list, tasks, shopping list, recipes, and the like) 
+showcasing the implementation of CRUD operations, written in Swift for the iOS platform.
 
-Together with [list-android](https://github.com/cyliong/list-android), they present a way to develop cross-platform native mobile apps with similar patterns and libraries. In addition, BDD-style test automation for both the Android and iOS list apps is showcased at [cross-platform-bdd](https://github.com/cyliong/cross-platform-bdd).
+This project, together with [list-android](https://github.com/cyliong/list-android), 
+present a way to develop cross-platform native mobile apps with similar patterns and libraries, including:
+- MVVM pattern
+- Reactive programming
+- Material Components
+- Realm
+
+In addition, BDD-style test automation for both the Android and iOS list apps is showcased at 
+[cross-platform-bdd](https://github.com/cyliong/cross-platform-bdd).
+
+*If you are looking for a more iOS-specific solution without concerning
+too much about reusing similar patterns and libraries across platforms,
+may refer to the [list2-ios](https://github.com/cyliong/list2-ios) project.*
 
 ## Features
 - Display a list of items (`UITableViewController`, Realm `Results`)
@@ -13,6 +26,7 @@ Together with [list-android](https://github.com/cyliong/list-android), they pres
 ## Dependencies
 - Realm Database
 - RxSwift
+- Material Components
 
 ## Requirements
 - Xcode 10.2 or higher
