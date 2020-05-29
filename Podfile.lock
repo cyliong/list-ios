@@ -1,7 +1,7 @@
 PODS:
-  - MaterialComponents/AnimationTiming (107.4.0)
-  - MaterialComponents/Availability (107.4.0)
-  - MaterialComponents/Buttons (107.4.0):
+  - MaterialComponents/AnimationTiming (109.5.0)
+  - MaterialComponents/Availability (109.5.0)
+  - MaterialComponents/Buttons (109.5.0):
     - MaterialComponents/Elevation
     - MaterialComponents/Ink
     - MaterialComponents/private/Math
@@ -12,37 +12,37 @@ PODS:
     - MaterialComponents/Typography
     - MDFInternationalization
     - MDFTextAccessibility
-  - MaterialComponents/Elevation (107.4.0):
+  - MaterialComponents/Elevation (109.5.0):
     - MaterialComponents/Availability
     - MaterialComponents/private/Color
     - MaterialComponents/private/Math
-  - MaterialComponents/Ink (107.4.0):
+  - MaterialComponents/Ink (109.5.0):
     - MaterialComponents/Availability
     - MaterialComponents/private/Color
     - MaterialComponents/private/Math
-  - MaterialComponents/OverlayWindow (107.4.0):
+  - MaterialComponents/OverlayWindow (109.5.0):
     - MaterialComponents/Availability
     - MaterialComponents/private/Application
-  - MaterialComponents/private/Application (107.4.0)
-  - MaterialComponents/private/Color (107.4.0):
+  - MaterialComponents/private/Application (109.5.0)
+  - MaterialComponents/private/Color (109.5.0):
     - MaterialComponents/Availability
-  - MaterialComponents/private/KeyboardWatcher (107.4.0):
+  - MaterialComponents/private/KeyboardWatcher (109.5.0):
     - MaterialComponents/private/Application
-  - MaterialComponents/private/Math (107.4.0)
-  - MaterialComponents/private/Overlay (107.4.0)
-  - MaterialComponents/Ripple (107.4.0):
+  - MaterialComponents/private/Math (109.5.0)
+  - MaterialComponents/private/Overlay (109.5.0)
+  - MaterialComponents/Ripple (109.5.0):
     - MaterialComponents/AnimationTiming
     - MaterialComponents/Availability
     - MaterialComponents/private/Color
     - MaterialComponents/private/Math
-  - MaterialComponents/ShadowElevations (107.4.0)
-  - MaterialComponents/ShadowLayer (107.4.0):
+  - MaterialComponents/ShadowElevations (109.5.0)
+  - MaterialComponents/ShadowLayer (109.5.0):
     - MaterialComponents/ShadowElevations
-  - MaterialComponents/Shapes (107.4.0):
+  - MaterialComponents/Shapes (109.5.0):
     - MaterialComponents/private/Color
     - MaterialComponents/private/Math
     - MaterialComponents/ShadowLayer
-  - MaterialComponents/Snackbar (107.4.0):
+  - MaterialComponents/Snackbar (109.5.0):
     - MaterialComponents/AnimationTiming
     - MaterialComponents/Availability
     - MaterialComponents/Buttons
@@ -55,16 +55,16 @@ PODS:
     - MaterialComponents/ShadowElevations
     - MaterialComponents/ShadowLayer
     - MaterialComponents/Typography
-  - MaterialComponents/Typography (107.4.0):
+  - MaterialComponents/Typography (109.5.0):
     - MaterialComponents/private/Application
     - MaterialComponents/private/Math
   - MDFInternationalization (2.0.0)
   - MDFTextAccessibility (2.0.0)
-  - Realm (4.4.0):
-    - Realm/Headers (= 4.4.0)
-  - Realm/Headers (4.4.0)
-  - RealmSwift (4.4.0):
-    - Realm (= 4.4.0)
+  - Realm (5.0.0):
+    - Realm/Headers (= 5.0.0)
+  - Realm/Headers (5.0.0)
+  - RealmSwift (5.0.0):
+    - Realm (= 5.0.0)
   - RxCocoa (5.1.1):
     - RxRelay (~> 5)
     - RxSwift (~> 5)
@@ -90,15 +90,15 @@ SPEC REPOS:
     - RxSwift
 
 SPEC CHECKSUMS:
-  MaterialComponents: 52e2ade4684e3017eff7f62587b37522d217ea50
+  MaterialComponents: 7698cdf7eacb5f192456dbbe597aa7a8857fa3ef
   MDFInternationalization: 010097556d6b09d2c4ea38e0820ea6d37be6a314
   MDFTextAccessibility: 85c09a1bd9c321f494348e632a25063bcda35a53
-  Realm: e125f464884cda953ebefe70c671b75b03b81b9b
-  RealmSwift: 33656a42bd300959a081fc13347376bc478071af
+  Realm: 76066d333de26f97e9caedaa85ee3ff4a62ca265
+  RealmSwift: c1bdff09b422569dc6881410d9ccf712bcdb79b0
   RxCocoa: 32065309a38d29b5b0db858819b5bf9ef038b601
   RxRelay: d77f7d771495f43c556cbc43eebd1bb54d01e8e9
   RxSwift: 81470a2074fa8780320ea5fe4102807cb7118178
 
 PODFILE CHECKSUM: 83faecf8e9f3755c12bba002fa720f362e6d26d6
 
-COCOAPODS: 1.9.1
+COCOAPODS: 1.9.2
