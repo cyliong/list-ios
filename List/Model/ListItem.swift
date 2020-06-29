@@ -5,6 +5,7 @@ class ListItem: Object {
     
     @objc dynamic var id = UUID().uuidString
     @objc dynamic var title = ""
+    @objc dynamic var created = Date()
     
     convenience init(title: String) {
         self.init()
