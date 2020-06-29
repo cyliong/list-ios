@@ -3,7 +3,9 @@ import RealmSwift
 
 class ListItemsViewModel {
     
-    lazy var listItems: Results<ListItem> = { realm.objects(ListItem.self) }()
+    lazy var listItems: Results<ListItem> = {
+        realm.objects(ListItem.self).sorted(byKeyPath: "created")
+    }()
     
     private let realm = try! Realm()
     
