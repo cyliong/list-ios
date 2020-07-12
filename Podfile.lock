@@ -1,7 +1,7 @@
 PODS:
-  - MaterialComponents/AnimationTiming (110.0.0)
-  - MaterialComponents/Availability (110.0.0)
-  - MaterialComponents/Buttons (110.0.0):
+  - MaterialComponents/AnimationTiming (110.2.0)
+  - MaterialComponents/Availability (110.2.0)
+  - MaterialComponents/Buttons (110.2.0):
     - MaterialComponents/Elevation
     - MaterialComponents/Ink
     - MaterialComponents/private/Math
@@ -13,40 +13,40 @@ PODS:
     - MaterialComponents/Typography
     - MDFInternationalization
     - MDFTextAccessibility
-  - MaterialComponents/Elevation (110.0.0):
+  - MaterialComponents/Elevation (110.2.0):
     - MaterialComponents/Availability
     - MaterialComponents/private/Color
     - MaterialComponents/private/Math
-  - MaterialComponents/Ink (110.0.0):
+  - MaterialComponents/Ink (110.2.0):
     - MaterialComponents/Availability
     - MaterialComponents/private/Color
     - MaterialComponents/private/Math
-  - MaterialComponents/OverlayWindow (110.0.0):
+  - MaterialComponents/OverlayWindow (110.2.0):
     - MaterialComponents/Availability
     - MaterialComponents/private/Application
-  - MaterialComponents/private/Application (110.0.0)
-  - MaterialComponents/private/Color (110.0.0):
+  - MaterialComponents/private/Application (110.2.0)
+  - MaterialComponents/private/Color (110.2.0):
     - MaterialComponents/Availability
-  - MaterialComponents/private/KeyboardWatcher (110.0.0):
+  - MaterialComponents/private/KeyboardWatcher (110.2.0):
     - MaterialComponents/private/Application
-  - MaterialComponents/private/Math (110.0.0)
-  - MaterialComponents/private/Overlay (110.0.0)
-  - MaterialComponents/Ripple (110.0.0):
+  - MaterialComponents/private/Math (110.2.0)
+  - MaterialComponents/private/Overlay (110.2.0)
+  - MaterialComponents/Ripple (110.2.0):
     - MaterialComponents/AnimationTiming
     - MaterialComponents/Availability
     - MaterialComponents/private/Color
     - MaterialComponents/private/Math
-  - MaterialComponents/ShadowElevations (110.0.0)
-  - MaterialComponents/ShadowLayer (110.0.0):
+  - MaterialComponents/ShadowElevations (110.2.0)
+  - MaterialComponents/ShadowLayer (110.2.0):
     - MaterialComponents/ShadowElevations
-  - MaterialComponents/ShapeLibrary (110.0.0):
+  - MaterialComponents/ShapeLibrary (110.2.0):
     - MaterialComponents/private/Math
     - MaterialComponents/Shapes
-  - MaterialComponents/Shapes (110.0.0):
+  - MaterialComponents/Shapes (110.2.0):
     - MaterialComponents/private/Color
     - MaterialComponents/private/Math
     - MaterialComponents/ShadowLayer
-  - MaterialComponents/Snackbar (110.0.0):
+  - MaterialComponents/Snackbar (110.2.0):
     - MaterialComponents/AnimationTiming
     - MaterialComponents/Availability
     - MaterialComponents/Buttons
@@ -59,17 +59,17 @@ PODS:
     - MaterialComponents/ShadowElevations
     - MaterialComponents/ShadowLayer
     - MaterialComponents/Typography
-  - MaterialComponents/Typography (110.0.0):
+  - MaterialComponents/Typography (110.2.0):
     - MaterialComponents/private/Application
     - MaterialComponents/private/Math
     - MDFTextAccessibility
   - MDFInternationalization (2.0.0)
   - MDFTextAccessibility (2.0.0)
-  - Realm (5.1.0):
-    - Realm/Headers (= 5.1.0)
-  - Realm/Headers (5.1.0)
-  - RealmSwift (5.1.0):
-    - Realm (= 5.1.0)
+  - Realm (5.2.0):
+    - Realm/Headers (= 5.2.0)
+  - Realm/Headers (5.2.0)
+  - RealmSwift (5.2.0):
+    - Realm (= 5.2.0)
   - RxCocoa (5.1.1):
     - RxRelay (~> 5)
     - RxSwift (~> 5)
@@ -95,11 +95,11 @@ SPEC REPOS:
     - RxSwift
 
 SPEC CHECKSUMS:
-  MaterialComponents: 8de2f7a102ae37bf276a558ac88086780f6d1b5f
+  MaterialComponents: 7a6468f225881fe81f8a68cc49727209687f7b1e
   MDFInternationalization: 010097556d6b09d2c4ea38e0820ea6d37be6a314
   MDFTextAccessibility: 85c09a1bd9c321f494348e632a25063bcda35a53
-  Realm: bdea546851e37b4cf0a2400cef115c7c26fda488
-  RealmSwift: 70945aa168db93b215c460e9c8ef680261aa28af
+  Realm: f749c723e272f08fdf1939af5e61d2bd09b203e8
+  RealmSwift: bf0ab78b52c5bafba8b3ad73be8dfb4c1ea5cf01
   RxCocoa: 32065309a38d29b5b0db858819b5bf9ef038b601
   RxRelay: d77f7d771495f43c556cbc43eebd1bb54d01e8e9
   RxSwift: 81470a2074fa8780320ea5fe4102807cb7118178
