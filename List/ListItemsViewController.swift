@@ -29,7 +29,7 @@ class ListItemsViewController: UITableViewController {
                 if !deletions.isEmpty {
                     let message = MDCSnackbarMessage()
                     message.text = "Item deleted."
-                    MDCSnackbarManager.show(message)
+                    MDCSnackbarManager.default.show(message)
                 }
             case .error(let error):
                 fatalError("\(error)")
