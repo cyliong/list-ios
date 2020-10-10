@@ -26,7 +26,7 @@ class ItemViewController: UITableViewController {
         titleTextField
             .rx
             .text
-            .observeOn(MainScheduler.asyncInstance)
+            .observe(on: MainScheduler.asyncInstance)
             .throttle(.milliseconds(100), scheduler: MainScheduler.instance)
             .map {
                 !($0?.replacingOccurrences(of: " ", with: "").isEmpty ?? true)
