@@ -70,18 +70,18 @@ PODS:
   - Realm/Headers (5.4.8)
   - RealmSwift (5.4.8):
     - Realm (= 5.4.8)
-  - RxCocoa (5.1.1):
-    - RxRelay (~> 5)
-    - RxSwift (~> 5)
-  - RxRelay (5.1.1):
-    - RxSwift (~> 5)
-  - RxSwift (5.1.1)
+  - RxCocoa (6.0.0-rc.1):
+    - RxRelay (= 6.0.0-rc.1)
+    - RxSwift (= 6.0.0-rc.1)
+  - RxRelay (6.0.0-rc.1):
+    - RxSwift (= 6.0.0-rc.1)
+  - RxSwift (6.0.0-rc.1)
 
 DEPENDENCIES:
   - MaterialComponents/Snackbar
   - RealmSwift
-  - RxCocoa (~> 5)
-  - RxSwift (~> 5)
+  - RxCocoa (= 6.0.0-rc.1)
+  - RxSwift (= 6.0.0-rc.1)
 
 SPEC REPOS:
   trunk:
@@ -100,10 +100,10 @@ SPEC CHECKSUMS:
   MDFTextAccessibility: 85c09a1bd9c321f494348e632a25063bcda35a53
   Realm: 042bbb59227a0159eda397b8a5a49fbd67495ce7
   RealmSwift: 15ddd6b3398ebfc99810811c44f095df1313adb3
-  RxCocoa: 32065309a38d29b5b0db858819b5bf9ef038b601
-  RxRelay: d77f7d771495f43c556cbc43eebd1bb54d01e8e9
-  RxSwift: 81470a2074fa8780320ea5fe4102807cb7118178
+  RxCocoa: a28d75145c07b7547b85faf1e1ad8b25af88a752
+  RxRelay: 56abad6d32f73567858506d08735fdb341935b9a
+  RxSwift: dae1a32c48148897494b9e2a6b00a68b40694236
 
-PODFILE CHECKSUM: 34508f06c34d821b6cb824dfc617f40b4b752713
+PODFILE CHECKSUM: 936898d5b6dee588b4e028e1a735d4bc8159b419
 
 COCOAPODS: 1.9.3
