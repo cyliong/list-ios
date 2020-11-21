@@ -65,11 +65,11 @@ PODS:
     - MDFTextAccessibility
   - MDFInternationalization (2.0.0)
   - MDFTextAccessibility (2.0.0)
-  - Realm (10.1.3):
-    - Realm/Headers (= 10.1.3)
-  - Realm/Headers (10.1.3)
-  - RealmSwift (10.1.3):
-    - Realm (= 10.1.3)
+  - Realm (10.1.4):
+    - Realm/Headers (= 10.1.4)
+  - Realm/Headers (10.1.4)
+  - RealmSwift (10.1.4):
+    - Realm (= 10.1.4)
   - RxCocoa (6.0.0-rc.1):
     - RxRelay (= 6.0.0-rc.1)
     - RxSwift (= 6.0.0-rc.1)
@@ -98,8 +98,8 @@ SPEC CHECKSUMS:
   MaterialComponents: 04f29e3ec4965c29a48e13a626a0ab4bbd19e289
   MDFInternationalization: 010097556d6b09d2c4ea38e0820ea6d37be6a314
   MDFTextAccessibility: 85c09a1bd9c321f494348e632a25063bcda35a53
-  Realm: 072f4060c99150cb1d35e35ce1dd4dda7d9ddfed
-  RealmSwift: 96f96feafee63186789419235d14857dae9004ae
+  Realm: 80f4fb2971ccb9adc27a47d0955ae8e533a7030b
+  RealmSwift: 0e566ca714edb377bba8ea0811eafcea0b93734e
   RxCocoa: a28d75145c07b7547b85faf1e1ad8b25af88a752
   RxRelay: 56abad6d32f73567858506d08735fdb341935b9a
   RxSwift: dae1a32c48148897494b9e2a6b00a68b40694236
