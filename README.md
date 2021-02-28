@@ -29,7 +29,7 @@ may refer to the [list2-ios](https://github.com/cyliong/list2-ios) project.*
 - Material Components
 
 ## Requirements
-- Xcode 12.3 or higher
+- Xcode 12.4 or higher
 - CocoaPods 1.10.1 or higher
 - iOS 10.0 or higher
 - Swift 5 or higher
