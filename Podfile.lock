@@ -1,7 +1,7 @@
 PODS:
-  - MaterialComponents/AnimationTiming (124.0.0)
-  - MaterialComponents/Availability (124.0.0)
-  - MaterialComponents/Buttons (124.0.0):
+  - MaterialComponents/AnimationTiming (124.0.1)
+  - MaterialComponents/Availability (124.0.1)
+  - MaterialComponents/Buttons (124.0.1):
     - MaterialComponents/Elevation
     - MaterialComponents/Ink
     - MaterialComponents/private/Math
@@ -13,40 +13,40 @@ PODS:
     - MaterialComponents/Typography
     - MDFInternationalization
     - MDFTextAccessibility
-  - MaterialComponents/Elevation (124.0.0):
+  - MaterialComponents/Elevation (124.0.1):
     - MaterialComponents/Availability
     - MaterialComponents/private/Color
     - MaterialComponents/private/Math
-  - MaterialComponents/Ink (124.0.0):
+  - MaterialComponents/Ink (124.0.1):
     - MaterialComponents/Availability
     - MaterialComponents/private/Color
     - MaterialComponents/private/Math
-  - MaterialComponents/OverlayWindow (124.0.0):
+  - MaterialComponents/OverlayWindow (124.0.1):
     - MaterialComponents/Availability
     - MaterialComponents/private/Application
-  - MaterialComponents/private/Application (124.0.0)
-  - MaterialComponents/private/Color (124.0.0):
+  - MaterialComponents/private/Application (124.0.1)
+  - MaterialComponents/private/Color (124.0.1):
     - MaterialComponents/Availability
-  - MaterialComponents/private/KeyboardWatcher (124.0.0):
+  - MaterialComponents/private/KeyboardWatcher (124.0.1):
     - MaterialComponents/private/Application
-  - MaterialComponents/private/Math (124.0.0)
-  - MaterialComponents/private/Overlay (124.0.0)
-  - MaterialComponents/Ripple (124.0.0):
+  - MaterialComponents/private/Math (124.0.1)
+  - MaterialComponents/private/Overlay (124.0.1)
+  - MaterialComponents/Ripple (124.0.1):
     - MaterialComponents/AnimationTiming
     - MaterialComponents/Availability
     - MaterialComponents/private/Color
     - MaterialComponents/private/Math
-  - MaterialComponents/ShadowElevations (124.0.0)
-  - MaterialComponents/ShadowLayer (124.0.0):
+  - MaterialComponents/ShadowElevations (124.0.1)
+  - MaterialComponents/ShadowLayer (124.0.1):
     - MaterialComponents/ShadowElevations
-  - MaterialComponents/ShapeLibrary (124.0.0):
+  - MaterialComponents/ShapeLibrary (124.0.1):
     - MaterialComponents/private/Math
     - MaterialComponents/Shapes
-  - MaterialComponents/Shapes (124.0.0):
+  - MaterialComponents/Shapes (124.0.1):
     - MaterialComponents/private/Color
     - MaterialComponents/private/Math
     - MaterialComponents/ShadowLayer
-  - MaterialComponents/Snackbar (124.0.0):
+  - MaterialComponents/Snackbar (124.0.1):
     - MaterialComponents/AnimationTiming
     - MaterialComponents/Availability
     - MaterialComponents/Buttons
@@ -59,7 +59,7 @@ PODS:
     - MaterialComponents/ShadowElevations
     - MaterialComponents/ShadowLayer
     - MaterialComponents/Typography
-  - MaterialComponents/Typography (124.0.0):
+  - MaterialComponents/Typography (124.0.1):
     - MaterialComponents/private/Application
     - MaterialComponents/private/Math
     - MDFTextAccessibility
@@ -95,7 +95,7 @@ SPEC REPOS:
     - RxSwift
 
 SPEC CHECKSUMS:
-  MaterialComponents: 865cc843b07c818a3e53f4fb2d9d51e4885730bb
+  MaterialComponents: c3f4e9d8e9cf9f02ab94a8b4823539fd9c7bf505
   MDFInternationalization: 010097556d6b09d2c4ea38e0820ea6d37be6a314
   MDFTextAccessibility: f4bb4cc2194286651b59a215fdeaa0e05dc90ba5
   Realm: 55bae3a2f42186360b54fd8783e884ae8656ab05
