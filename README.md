@@ -22,6 +22,7 @@ may refer to the [list2-ios](https://github.com/cyliong/list2-ios) project.*
 - Reactively enable or disable save button upon text changes (`RxSwift`)
 - Swipe to delete items (`tableView(_:commit:forRowAt:)`)
 - Store items in database using data model (Realm `Object`)
+- Database migration (`Realm.Configuration`)
 
 ## Dependencies
 - Realm Database
