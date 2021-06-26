@@ -6,7 +6,7 @@ written in Swift for the iOS platform.
 
 This project, 
 together with [list-android](https://github.com/cyliong/list-android), 
-present a way to develop cross-platform native mobile apps 
+presents a way to develop cross-platform native mobile apps 
 with similar patterns and libraries, including:
 - MVVM pattern
 - Reactive programming
@@ -36,7 +36,7 @@ may refer to the [list2-ios](https://github.com/cyliong/list2-ios) project.*
 - Material Components
 
 ## Requirements
-- Xcode 12.5 or higher
+- Xcode 12.5.1 or higher
 - CocoaPods 1.10.1 or higher
 - iOS 10.0 or higher
 - Swift 5 or higher
