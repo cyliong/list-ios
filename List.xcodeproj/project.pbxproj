@@ -124,6 +124,7 @@
 			buildConfigurationList = AF25D6FE22CB74E800F9D68D /* Build configuration list for PBXNativeTarget "List" */;
 			buildPhases = (
 				80A09C0D3BF12314E4E18964 /* [CP] Check Pods Manifest.lock */,
+				F39C89DBCB190B98E71793E7 /* [CP-User] Run Flutter Build list_module Script */,
 				AF25D6E822CB74E800F9D68D /* Sources */,
 				AF25D6E922CB74E800F9D68D /* Frameworks */,
 				AF25D6EA22CB74E800F9D68D /* Resources */,
@@ -222,6 +223,16 @@
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
+		};
+		F39C89DBCB190B98E71793E7 /* [CP-User] Run Flutter Build list_module Script */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "[CP-User] Run Flutter Build list_module Script";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e\nset -u\nsource \"${SRCROOT}/../list-module/.ios/Flutter/flutter_export_environment.sh\"\nexport VERBOSE_SCRIPT_LOGGING=1 && \"$FLUTTER_ROOT\"/packages/flutter_tools/bin/xcode_backend.sh build";
 		};
 /* End PBXShellScriptBuildPhase section */
 

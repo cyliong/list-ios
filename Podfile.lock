@@ -1,4 +1,9 @@
 PODS:
+  - Flutter (1.0.0)
+  - FlutterPluginRegistrant (0.0.1):
+    - Flutter
+  - list_module (0.0.1):
+    - Flutter
   - MaterialComponents/AnimationTiming (124.2.0)
   - MaterialComponents/Availability (124.2.0)
   - MaterialComponents/Buttons (124.2.0):
@@ -81,6 +86,9 @@ PODS:
   - RxSwift (6.2.0)
 
 DEPENDENCIES:
+  - Flutter (from `../list-module/.ios/Flutter/engine`)
+  - FlutterPluginRegistrant (from `../list-module/.ios/Flutter/FlutterPluginRegistrant`)
+  - list_module (from `../list-module/.ios/Flutter`)
   - MaterialComponents/Snackbar
   - RealmSwift
   - RxCocoa (= 6.2.0)
@@ -97,7 +105,18 @@ SPEC REPOS:
     - RxRelay
     - RxSwift
 
+EXTERNAL SOURCES:
+  Flutter:
+    :path: "../list-module/.ios/Flutter/engine"
+  FlutterPluginRegistrant:
+    :path: "../list-module/.ios/Flutter/FlutterPluginRegistrant"
+  list_module:
+    :path: "../list-module/.ios/Flutter"
+
 SPEC CHECKSUMS:
+  Flutter: ac41d61a47ae5bf8195a5598d2d63754888ec0d5
+  FlutterPluginRegistrant: 2afd5ea46d3a949472c9b7da6462d8fbf7d8b16e
+  list_module: e30ff1e104d895a59809a1dd30c31611adfdcbda
   MaterialComponents: 1a9b2d9d45b1601ae544de85089adc4c464306d4
   MDFInternationalization: 010097556d6b09d2c4ea38e0820ea6d37be6a314
   MDFTextAccessibility: f4bb4cc2194286651b59a215fdeaa0e05dc90ba5
@@ -107,6 +126,6 @@ SPEC CHECKSUMS:
   RxRelay: e72dbfd157807478401ef1982e1c61c945c94b2f
   RxSwift: d356ab7bee873611322f134c5f9ef379fa183d8f
 
-PODFILE CHECKSUM: 6285c5fe79fbcd728f837c54a719873c2ef872d2
+PODFILE CHECKSUM: fe87d5578edd64ec643b93eb75ba859cc05e0f31
 
 COCOAPODS: 1.10.2
