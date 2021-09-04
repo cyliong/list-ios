@@ -1,6 +1,7 @@
 import UIKit
 import MaterialComponents.MaterialSnackbar
 import RealmSwift
+import Flutter
 
 class ListItemsViewController: UITableViewController {
     
@@ -79,5 +80,8 @@ class ListItemsViewController: UITableViewController {
     // MARK: - Actions
     
     @IBAction func about(_ sender: UIBarButtonItem) {
+        let flutterViewController = FlutterViewController(project: nil, nibName: nil, bundle: nil)
+        flutterViewController.title = "About"
+        navigationController?.pushViewController(flutterViewController, animated: true)
     }
 }
