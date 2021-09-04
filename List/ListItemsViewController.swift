@@ -76,4 +76,8 @@ class ListItemsViewController: UITableViewController {
         }
     }
     
+    // MARK: - Actions
+    
+    @IBAction func about(_ sender: UIBarButtonItem) {
+    }
 }

@@ -43,7 +43,11 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="List" id="W21-Na-0bE">
-                        <barButtonItem key="leftBarButtonItem" title="About" id="n9v-uV-8BP"/>
+                        <barButtonItem key="leftBarButtonItem" title="About" id="n9v-uV-8BP">
+                            <connections>
+                                <action selector="about:" destination="Xdm-Uv-LZ1" id="mce-Ip-ked"/>
+                            </connections>
+                        </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="1AX-sV-Xz0">
                             <connections>
                                 <segue destination="qHf-dJ-JZ8" kind="show" id="5Hb-Zn-NTh"/>
