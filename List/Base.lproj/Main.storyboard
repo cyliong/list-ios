@@ -43,7 +43,7 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="List" id="W21-Na-0bE">
-                        <barButtonItem key="leftBarButtonItem" title="About" id="n9v-uV-8BP">
+                        <barButtonItem key="leftBarButtonItem" title="About" image="outline_info_black_24pt" id="n9v-uV-8BP">
                             <connections>
                                 <action selector="about:" destination="Xdm-Uv-LZ1" id="mce-Ip-ked"/>
                             </connections>
@@ -161,6 +161,7 @@
         <segue reference="5H7-3W-lLt"/>
     </inferredMetricsTieBreakers>
     <resources>
+        <image name="outline_info_black_24pt" width="24" height="24"/>
         <systemColor name="groupTableViewBackgroundColor">
             <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
