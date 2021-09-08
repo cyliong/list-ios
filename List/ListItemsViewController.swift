@@ -80,7 +80,8 @@ class ListItemsViewController: UITableViewController {
     // MARK: - Actions
     
     @IBAction func about(_ sender: UIBarButtonItem) {
-        let flutterViewController = FlutterViewController(project: nil, nibName: nil, bundle: nil)
+        let flutterEngine = (UIApplication.shared.delegate as! AppDelegate).flutterEngine
+        let flutterViewController = FlutterViewController(engine: flutterEngine, nibName: nil, bundle: nil)
         flutterViewController.title = "About"
         navigationController?.pushViewController(flutterViewController, animated: true)
     }
