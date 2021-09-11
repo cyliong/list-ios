@@ -83,6 +83,7 @@ class ListItemsViewController: UITableViewController {
         let flutterEngine = (UIApplication.shared.delegate as! AppDelegate).flutterEngine
         let flutterViewController = FlutterViewController(engine: flutterEngine, nibName: nil, bundle: nil)
         flutterViewController.title = "About"
+        flutterViewController.view.backgroundColor = UIColor.white
         navigationController?.pushViewController(flutterViewController, animated: true)
     }
 }
