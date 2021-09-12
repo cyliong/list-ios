@@ -22,7 +22,8 @@ for both the Android and iOS list apps is showcased at
 is to be integrated into this project to share code written in Dart
 across platforms.*
 
-*However, if you are looking for a pure native solution, refer to 
+*However, if you are looking for a pure native solution 
+without the need to have a single codebase across platforms, refer to 
 the [native](https://github.com/cyliong/list-ios/tree/native) branch.*
 
 *Alternatively, if you are looking for a more iOS-specific solution 
@@ -54,15 +55,24 @@ the [list2-ios](https://github.com/cyliong/list2-ios) project.*
 ## Setup
 1. Download this project (list-ios) and 
    [list-module](https://github.com/cyliong/list-module) 
-   then place them in the same directory (e.g. `path/to`).
+   then place them in the same directory (e.g. `path/to/`):
+```
+path/to/
+├── list-ios/
+└── list-module/
+```
 2. Run the following to set up list-module:
 ```
-$ cd path/to/list-module
-$ flutter pub get
+cd path/to/list-module
+```
+```
+flutter pub get
 ```
 3. Run the following to set up list-ios:
 ```
-$ cd path/to/list-ios
-$ pod install
+cd path/to/list-ios
+```
+```
+pod install
 ```
 4. Open `List.xcworkspace` in Xcode and run the app.
