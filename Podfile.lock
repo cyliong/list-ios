@@ -2,6 +2,7 @@ PODS:
   - Flutter (1.0.0)
   - FlutterPluginRegistrant (0.0.1):
     - Flutter
+    - package_info_plus
   - list_module (0.0.1):
     - Flutter
   - MaterialComponents/AnimationTiming (124.2.0)
@@ -73,6 +74,8 @@ PODS:
     - MDFTextAccessibility
   - MDFInternationalization (2.0.0)
   - MDFTextAccessibility (2.0.1)
+  - package_info_plus (0.4.5):
+    - Flutter
   - Realm (10.14.0):
     - Realm/Headers (= 10.14.0)
   - Realm/Headers (10.14.0)
@@ -90,6 +93,7 @@ DEPENDENCIES:
   - FlutterPluginRegistrant (from `../list-module/.ios/Flutter/FlutterPluginRegistrant`)
   - list_module (from `../list-module/.ios/Flutter`)
   - MaterialComponents/Snackbar
+  - package_info_plus (from `../list-module/.ios/.symlinks/plugins/package_info_plus/ios`)
   - RealmSwift
   - RxCocoa (= 6.2.0)
   - RxSwift (= 6.2.0)
@@ -112,14 +116,17 @@ EXTERNAL SOURCES:
     :path: "../list-module/.ios/Flutter/FlutterPluginRegistrant"
   list_module:
     :path: "../list-module/.ios/Flutter"
+  package_info_plus:
+    :path: "../list-module/.ios/.symlinks/plugins/package_info_plus/ios"
 
 SPEC CHECKSUMS:
   Flutter: bdfa2e8fe0e2880a2c6a58a0b1a8675c262a07af
-  FlutterPluginRegistrant: 2afd5ea46d3a949472c9b7da6462d8fbf7d8b16e
+  FlutterPluginRegistrant: cf67abf4adee268b0f79595edcd06377cc41fecd
   list_module: e30ff1e104d895a59809a1dd30c31611adfdcbda
   MaterialComponents: 1a9b2d9d45b1601ae544de85089adc4c464306d4
   MDFInternationalization: 010097556d6b09d2c4ea38e0820ea6d37be6a314
   MDFTextAccessibility: f4bb4cc2194286651b59a215fdeaa0e05dc90ba5
+  package_info_plus: 6c92f08e1f853dc01228d6f553146438dafcd14e
   Realm: 95a120db10fa66d0f1d10bee4ce828177ae00090
   RealmSwift: 4937e1b6f9b87bc25dc23883198807bf69e8cb76
   RxCocoa: 4baf94bb35f2c0ab31bc0cb9f1900155f646ba42
