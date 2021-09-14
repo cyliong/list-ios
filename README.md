@@ -39,6 +39,7 @@ the [list2-ios](https://github.com/cyliong/list2-ios) project.*
 - Swipe to delete items (`tableView(_:commit:forRowAt:)`)
 - Store items in database using data model (Realm `Object`)
 - Database migration (`Realm.Configuration`)
+- About page (Flutter module)
 
 ## Dependencies
 - Realm Database
