@@ -1,6 +1,7 @@
 import UIKit
 import RealmSwift
 import Flutter
+import FlutterPluginRegistrant
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -17,6 +18,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         Realm.Configuration.defaultConfiguration = config
         
         flutterEngine.run()
+        GeneratedPluginRegistrant.register(with: self.flutterEngine)
         
         return true
     }
