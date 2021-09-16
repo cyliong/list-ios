@@ -76,11 +76,11 @@ PODS:
   - MDFTextAccessibility (2.0.1)
   - package_info_plus (0.4.5):
     - Flutter
-  - Realm (10.14.0):
-    - Realm/Headers (= 10.14.0)
-  - Realm/Headers (10.14.0)
-  - RealmSwift (10.14.0):
-    - Realm (= 10.14.0)
+  - Realm (10.15.0):
+    - Realm/Headers (= 10.15.0)
+  - Realm/Headers (10.15.0)
+  - RealmSwift (10.15.0):
+    - Realm (= 10.15.0)
   - RxCocoa (6.2.0):
     - RxRelay (= 6.2.0)
     - RxSwift (= 6.2.0)
@@ -127,8 +127,8 @@ SPEC CHECKSUMS:
   MDFInternationalization: 010097556d6b09d2c4ea38e0820ea6d37be6a314
   MDFTextAccessibility: f4bb4cc2194286651b59a215fdeaa0e05dc90ba5
   package_info_plus: 6c92f08e1f853dc01228d6f553146438dafcd14e
-  Realm: 95a120db10fa66d0f1d10bee4ce828177ae00090
-  RealmSwift: 4937e1b6f9b87bc25dc23883198807bf69e8cb76
+  Realm: 13e805eb23d3eb8d8bb700d9cf9761f4b625b389
+  RealmSwift: 51b29bb4e19fe7322c8a599cf3494b8a08888ef1
   RxCocoa: 4baf94bb35f2c0ab31bc0cb9f1900155f646ba42
   RxRelay: e72dbfd157807478401ef1982e1c61c945c94b2f
   RxSwift: d356ab7bee873611322f134c5f9ef379fa183d8f
