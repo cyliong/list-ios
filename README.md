@@ -49,7 +49,7 @@ the [list2-ios](https://github.com/cyliong/list2-ios) project.*
 
 ## Requirements
 - Xcode 12.5.1 or higher
-- CocoaPods 1.11.0 or higher
+- CocoaPods 1.11.1 or higher
 - iOS 10.0 or higher
 - Swift 5 or higher
 
