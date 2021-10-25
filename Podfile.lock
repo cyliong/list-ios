@@ -3,6 +3,7 @@ PODS:
   - FlutterPluginRegistrant (0.0.1):
     - Flutter
     - package_info_plus
+    - shared_preferences
     - url_launcher
   - list_module (0.0.1):
     - Flutter
@@ -88,6 +89,8 @@ PODS:
   - RxRelay (6.2.0):
     - RxSwift (= 6.2.0)
   - RxSwift (6.2.0)
+  - shared_preferences (0.0.1):
+    - Flutter
   - url_launcher (0.0.1):
     - Flutter
 
@@ -100,6 +103,7 @@ DEPENDENCIES:
   - RealmSwift
   - RxCocoa (= 6.2.0)
   - RxSwift (= 6.2.0)
+  - shared_preferences (from `../list-module/.ios/.symlinks/plugins/shared_preferences/ios`)
   - url_launcher (from `../list-module/.ios/.symlinks/plugins/url_launcher/ios`)
 
 SPEC REPOS:
@@ -122,12 +126,14 @@ EXTERNAL SOURCES:
     :path: "../list-module/.ios/Flutter"
   package_info_plus:
     :path: "../list-module/.ios/.symlinks/plugins/package_info_plus/ios"
+  shared_preferences:
+    :path: "../list-module/.ios/.symlinks/plugins/shared_preferences/ios"
   url_launcher:
     :path: "../list-module/.ios/.symlinks/plugins/url_launcher/ios"
 
 SPEC CHECKSUMS:
   Flutter: bdfa2e8fe0e2880a2c6a58a0b1a8675c262a07af
-  FlutterPluginRegistrant: e55bc064ee9a0a6b3e42a6914cf083b3ae1c6748
+  FlutterPluginRegistrant: 2fa06547c4c0452434b8c13d0ae2aa7c7624d888
   list_module: e30ff1e104d895a59809a1dd30c31611adfdcbda
   MaterialComponents: 1a9b2d9d45b1601ae544de85089adc4c464306d4
   MDFInternationalization: 010097556d6b09d2c4ea38e0820ea6d37be6a314
@@ -138,6 +144,7 @@ SPEC CHECKSUMS:
   RxCocoa: 4baf94bb35f2c0ab31bc0cb9f1900155f646ba42
   RxRelay: e72dbfd157807478401ef1982e1c61c945c94b2f
   RxSwift: d356ab7bee873611322f134c5f9ef379fa183d8f
+  shared_preferences: 5033afbb22d372e15aff8ff766df9021b845f273
   url_launcher: b6e016d912f04be9f5bf6e8e82dc599b7ba59649
 
 PODFILE CHECKSUM: fe87d5578edd64ec643b93eb75ba859cc05e0f31
