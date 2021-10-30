@@ -48,7 +48,7 @@ the [list2-ios](https://github.com/cyliong/list2-ios) project.*
 - Flutter
 
 ## Requirements
-- Xcode 13.0 or higher
+- Xcode 13.1 or higher
 - CocoaPods 1.11.2 or higher
 - iOS 10.0 or higher
 - Swift 5 or higher
