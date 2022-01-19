@@ -83,12 +83,12 @@ PODS:
   - Realm/Headers (10.21.0)
   - RealmSwift (10.21.0):
     - Realm (= 10.21.0)
-  - RxCocoa (6.2.0):
-    - RxRelay (= 6.2.0)
-    - RxSwift (= 6.2.0)
-  - RxRelay (6.2.0):
-    - RxSwift (= 6.2.0)
-  - RxSwift (6.2.0)
+  - RxCocoa (6.5.0):
+    - RxRelay (= 6.5.0)
+    - RxSwift (= 6.5.0)
+  - RxRelay (6.5.0):
+    - RxSwift (= 6.5.0)
+  - RxSwift (6.5.0)
   - shared_preferences_ios (0.0.1):
     - Flutter
   - url_launcher_ios (0.0.1):
@@ -101,8 +101,8 @@ DEPENDENCIES:
   - MaterialComponents/Snackbar
   - package_info_plus (from `../list-module/.ios/.symlinks/plugins/package_info_plus/ios`)
   - RealmSwift
-  - RxCocoa (= 6.2.0)
-  - RxSwift (= 6.2.0)
+  - RxCocoa (= 6.5.0)
+  - RxSwift (= 6.5.0)
   - shared_preferences_ios (from `../list-module/.ios/.symlinks/plugins/shared_preferences_ios/ios`)
   - url_launcher_ios (from `../list-module/.ios/.symlinks/plugins/url_launcher_ios/ios`)
 
@@ -141,12 +141,12 @@ SPEC CHECKSUMS:
   package_info_plus: 6c92f08e1f853dc01228d6f553146438dafcd14e
   Realm: 55220cda83aabd773740d18518e05fdbe00b87cc
   RealmSwift: 129dce1dd6b5d9194a37f568aaf32a6c10d1a803
-  RxCocoa: 4baf94bb35f2c0ab31bc0cb9f1900155f646ba42
-  RxRelay: e72dbfd157807478401ef1982e1c61c945c94b2f
-  RxSwift: d356ab7bee873611322f134c5f9ef379fa183d8f
+  RxCocoa: 94f817b71c07517321eb4f9ad299112ca8af743b
+  RxRelay: 1de1523e604c72b6c68feadedd1af3b1b4d0ecbd
+  RxSwift: 5710a9e6b17f3c3d6e40d6e559b9fa1e813b2ef8
   shared_preferences_ios: aef470a42dc4675a1cdd50e3158b42e3d1232b32
   url_launcher_ios: 02f1989d4e14e998335b02b67a7590fa34f971af
 
-PODFILE CHECKSUM: fe87d5578edd64ec643b93eb75ba859cc05e0f31
+PODFILE CHECKSUM: 99c897102a881eec3bd5f4477c059ab654daa557
 
 COCOAPODS: 1.11.2
